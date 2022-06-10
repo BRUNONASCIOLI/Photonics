@@ -1,0 +1,18 @@
+#run;
+#emepropagate;
+
+
+ç = getresult("EME", "user s matrix");
+soma = 0;
+for(l = 3:7){
+    som  = som + abs(ç(l,1))^2;    
+}
+    
+soma_d = 10*log10(som/1);
+
+
+print('A soma total e:');
+print(som);
+
+print('A perda em dB: ');
+print(soma_d);
